@@ -17,11 +17,14 @@ pip install requests pandas openpyxl
 ```
 
 - **Azure AD Application with appropriate permissions:**
-  - `User.Read.All`
-  - `Group.Read.All`
-  - `Team.ReadBasic.All`
-  - `ChannelMessage.Read.All`
-  - `Sites.Read.All`
+  - `User.Read.All` - Read all users' full profiles.
+  - `Group.Read.All` - Read all groups.
+  - `Team.ReadBasic.All` - Read the names and descriptions of all channels.
+  - `ChannelMessage.Read.All` - Read all channel messages.
+  - `Sites.Read.All` - Read items in all site collections.
+  - `Channel.ReadBasic.All` - Read the names and descriptions of all channels.
+  - `ChannelMember.Read.All` - Read the members of all channels.
+  - `GroupMember.Read.All` - Read all group memberships.
 
 ## Script 1: `List_Capture.py`
 
