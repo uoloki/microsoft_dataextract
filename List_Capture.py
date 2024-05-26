@@ -141,7 +141,10 @@ def main():
             'Users': 'users',
             'Groups': 'groups',
             'Teams': 'teams',
-            'Sites': 'sites/root/sites'  # SharePoint sites
+            'Sites': 'sites/root/sites',  # SharePoint sites
+            'Channels': 'teams/{team_id}/channels',
+            'Messages': 'teams/{team_id}/channels/{channel_id}/messages',
+            'Files': 'sites/{site_id}/drive/items/{folder_id}/children'
         }
 
         data_dict = {}
@@ -151,6 +154,9 @@ def main():
 
         # Fetch data from each endpoint
         for name, endpoint in endpoints.items():
+            if name in ['Channels', 'Messages', 'Files']:
+                continue
+
             data = get_data_from_endpoint(access_token, endpoint)
             if name == 'Sites':
                 all_sites = data.get('value', [])
@@ -190,3 +196,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
