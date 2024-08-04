@@ -42,7 +42,8 @@ Metadata Extractor is a comprehensive Python-based tool designed to extract, pro
 
 Create a credentials.json file in the config/ directory with the following structure:
 
-```{
+```
+{
   "AZURE_TENANT_ID": "your_tenant_id",
   "AZURE_CLIENT_ID": "your_client_id",
   "AZURE_CLIENT_SECRET": "your_client_secret",
@@ -58,7 +59,8 @@ Create a credentials.json file in the config/ directory with the following struc
   "SCCM_DATABASE": "your_sccm_database",
   "SCCM_USERNAME": "your_sccm_username",
   "SCCM_PASSWORD": "your_sccm_password"
-}```
+}
+```
 
 Ensure that you have the necessary permissions and credentials for each service you plan to use.
 
@@ -83,7 +85,8 @@ The script generates several Excel files:
 
 ## Project Structure
 
-`metadata_extractor/
+```
+metadata_extractor/
 │
 ├── src/
 │   ├── teams_sharepoint/
@@ -96,7 +99,8 @@ The script generates several Excel files:
 ├── config/
 ├── main.py
 ├── requirements.txt
-└── README.md`
+└── README.md
+```
 
 ## To-Do
 
