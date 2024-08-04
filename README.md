@@ -28,7 +28,7 @@ Metadata Extractor is a comprehensive Python-based tool designed to extract, pro
 ## Installation
 
 1. Clone the repository:
-   `git clone https://github.com/yourusername/metadata-extractor.git`
+   `git clone https://github.com/uoloki/microsoft_dataextract.git`
    `cd metadata-extractor`
 
 2. Install the required dependencies:
